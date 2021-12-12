@@ -41,3 +41,60 @@
 TermSocket.open: 1
 not able to serialize: expected string or bytes-like object
 TermSocket.open: Opened 1
+[I 09:20:09.195 NotebookApp] Saving file at /Untitled.ipynb
+[W 09:22:40.568 NotebookApp] Replacing stale connection: 7d922a5b-a8ff-441f-a50b-f08d09a89e2c:bb00b20e-e01d-470b-b261-b61d6d972386
+TermSocket.open: 1
+not able to serialize: expected string or bytes-like object
+TermSocket.open: Opened 1
+[W 09:24:13.772 NotebookApp] WebSocket ping timeout after 118450 ms.
+Exception in callback BaseAsyncIOLoop._handle_events(41, 1)
+handle: <Handle BaseAsyncIOLoop._handle_events(41, 1)>
+Traceback (most recent call last):
+  File "/srv/conda/envs/notebook/lib/python3.7/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/platform/asyncio.py", line 189, in _handle_events
+    handler_func(fileobj, events)
+  File "/srv/conda/envs/notebook/lib/python3.7/site-packages/terminado/management.py", line 239, in pty_read
+    client.on_pty_read(s)
+  File "/srv/conda/envs/notebook/lib/python3.7/site-packages/terminado/websocket.py", line 77, in on_pty_read
+    self.send_json_message(['stdout', text])
+  File "/srv/conda/envs/notebook/lib/python3.7/site-packages/terminado/websocket.py", line 87, in send_json_message
+    self.write_message(json_msg)
+  File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/terminal/handlers.py", line 70, in write_message
+    super().write_message(message, binary=binary)
+  File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/websocket.py", line 337, in write_message
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+Exception in callback BaseAsyncIOLoop._handle_events(41, 1)
+handle: <Handle BaseAsyncIOLoop._handle_events(41, 1)>
+Traceback (most recent call last):
+  File "/srv/conda/envs/notebook/lib/python3.7/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/platform/asyncio.py", line 189, in _handle_events
+    handler_func(fileobj, events)
+  File "/srv/conda/envs/notebook/lib/python3.7/site-packages/terminado/management.py", line 239, in pty_read
+    client.on_pty_read(s)
+  File "/srv/conda/envs/notebook/lib/python3.7/site-packages/terminado/websocket.py", line 77, in on_pty_read
+    self.send_json_message(['stdout', text])
+  File "/srv/conda/envs/notebook/lib/python3.7/site-packages/terminado/websocket.py", line 87, in send_json_message
+    self.write_message(json_msg)
+  File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/terminal/handlers.py", line 70, in write_message
+    super().write_message(message, binary=binary)
+  File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/websocket.py", line 337, in write_message
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+Websocket closed
+[I 09:28:25.028 NotebookApp] Saving file at /tutorial.ipynb
+[I 09:30:55.297 NotebookApp] Saving file at /tutorial.ipynb
+[W 09:32:10.335 NotebookApp] WebSocket ping timeout after 119031 ms.
+[W 09:32:12.767 NotebookApp] zmq message arrived on closed channel
+[W 09:32:12.771 NotebookApp] zmq message arrived on closed channel
+[W 09:32:12.776 NotebookApp] zmq message arrived on closed channel
+[W 09:32:12.778 NotebookApp] zmq message arrived on closed channel
+[W 09:32:12.780 NotebookApp] zmq message arrived on closed channel
+[W 09:32:12.782 NotebookApp] zmq message arrived on closed channel
+[W 09:32:13.090 NotebookApp] zmq message arrived on closed channel
+[W 09:32:13.093 NotebookApp] zmq message arrived on closed channel
+[I 09:32:55.998 NotebookApp] Saving file at /tutorial.ipynb
+[W 09:43:07.218 NotebookApp] Culling 'idle' kernel 'python3' (7d922a5b-a8ff-441f-a50b-f08d09a89e2c) with 2 connections due to 601 seconds of inactivity.
+[I 09:43:07.219 NotebookApp] Kernel shutdown: 7d922a5b-a8ff-441f-a50b-f08d09a89e2c
